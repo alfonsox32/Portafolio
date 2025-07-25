@@ -1,0 +1,693 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Libertinus Mono", monospace;
+}
+.cabezera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    border: 1px inset #8080806c;
+    box-shadow: 5px 5px 5px gray;
+}
+.cabezeraIzquierda{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.cabezeraDerecha h4 img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+.cabezeraDerecha h4 a{
+    text-decoration: none;
+    color: black;
+}
+.cabezeraDerecha{
+    margin-right: 25px;
+}
+.menu{
+    margin-left: 80px;
+    transition: width,height,color, 0.5s;
+}
+.menu:hover{
+    color: rgb(27, 26, 26);
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.418);
+    box-shadow: 0px 0px 10px black;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    align-items: end;
+}
+.dere{
+    display: flex;
+    align-items: center;
+    transition:width,height,color, 0.5s ;
+}
+.dere:hover{
+    font-size: 18px;
+    color: rgb(27, 26, 26);
+     background-color: rgba(128, 128, 128, 0.418);
+    box-shadow: 0px 0px 10px black;
+}
+.dere a{
+    margin-left: 10px;
+}
+.primeraSeccion{
+    height: 300px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(/Sin\ título.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 2%;
+}
+.imagenPrincipal{
+    text-align: center;
+    padding-top: 5%;
+    color: white; 
+    font-weight: bold;
+    font-size: 120%;
+}
+.encima{
+    font-size: 80%;
+    padding-top: 2%;
+     position: absolute;
+      top: 110%; /* mitad vertical */
+      left: 50%; /* mitad horizontal */
+      transform: translate(-50%, -50%); /* ajustar exactamente al centro */
+      width: 70%;
+      height: 120px;
+      background: black;
+      text-align: center;
+      color: white;
+      align-items: center;
+      box-shadow: 5px 5px 5px black;
+      animation-name: jugar;
+      animation-duration: 13s;
+      animation-iteration-count: infinite;
+}
+@keyframes jugar {
+    0%{
+        font-size: 80%;
+        width: 70%;
+        height: 120px;
+    }
+    50%{
+        font-size: 100%;
+        width: 80%;
+        height: 140px;
+    }
+    100%{
+       font-size: 80%;
+        width: 70%;
+        height: 120px;
+    }
+}
+.contenedorVacio{
+    width: 100%;
+    height: 220px;
+}
+.contenerLados{
+    display: flex;
+}
+.ladoDerecho img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 25px;
+    border-radius: 100%;
+    margin-left: 30%;
+    transition: whidth, heigth, color, 1s;
+}
+.ladoDerecho img:hover{
+    width: 220px;
+    height: 220px;
+    box-shadow: 0px 0px 15px;
+    border-radius: 10%;
+    margin-left: 25%;
+}
+.ladoIzquierdo{
+    margin-left: 25%;
+    width: 25%;
+    text-align: center;
+}
+.ladoIzquierdo h3{
+    margin-top: 12%;
+}
+.ladoIzquierdo p{
+    margin: 0 3%;
+}
+.ladoDerecho{
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0px 0px 30px gray;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    padding: 30px;
+}
+.precio{
+    font-size: 160%;
+    color: orange;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.terceraSeccion{
+    margin-top: 50px;
+}
+.contenedorTotal{
+    display: flex;
+    margin: 0% 1%;
+    height: 350px;
+}
+.ladoImagen {
+    width: 49% ;
+}
+.ladoTexto{
+    width: 49%;
+    padding: 100px;
+    background-color: black;
+    color: aliceblue;
+}
+.ladoImagen img{
+    width: 100% ;
+    height: 350px;
+}
+.encviarAmenu{
+    cursor: pointer;
+    background: orange;
+    width: 10%;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    margin-top: 3%;
+}
+.encviarAmenu a{
+    text-decoration: none;
+    color: black;
+}
+.cuartaSeccion{
+    margin-top: 4%;
+}
+.textoMenu{
+    text-align: center;
+    font-weight: bold;
+}
+.textoMenu h2,p{
+    padding-bottom: 15px;
+}
+.contenedorDePlatillos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.imageness1 {
+    cursor: pointer;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 40px rgb(0, 0, 0);
+  color: white; /* Para que el texto sea visible si el fondo se oscurece */
+  font-weight: bold;
+  text-align: center;
+  transition:width,height, 1s ;
+}
+.imageness1:hover{
+  width: 220px;
+  height: 220px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+.imageness1 .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* O el color que quieras para el efecto */
+  opacity: 0.5; /* Ajusta el nivel de opacidad */
+  z-index: 0; /* Debajo del texto */
+}
+.imageness1 > *:not(.overlay) {
+  position: relative;
+  z-index: 1; /* Para que el texto esté encima de la capa oscura */
+}
+.burger{
+    background-image: url(/burgerr.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.hot{
+    background-image: url(/hot.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.lon{
+    background-image: url(/lonche.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.gor{
+    background-image: url(/gordi.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ .bol{
+    background-image: url(/boles.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.papa{
+    background-image: url(/papas.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.quintaSeccion{
+    background-image: url(/fondo5.jpg);
+    background-attachment: fixed;
+    background-size: 50%;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 1%;
+    margin-top: 100px;
+}
+.contenedorquinto{
+    margin: 0 20%;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    box-shadow: 0px 0px 40px black;
+}
+.PieDpagina{
+    background-color: rgb(240, 242, 243);
+    margin: 0 10%;
+    margin-top: 80px;
+}
+.piepadre{
+    display: flex;
+    justify-content: space-between;
+}
+.piepadre li{
+    text-decoration: none;
+    padding-top: 10px;
+    list-style: none;
+}
+.piepadre li a{
+  text-decoration: none;
+color: black;
+}
+.iformacion{
+width: 22%;
+}
+.contacto{
+width: 22%;
+}
+.ubicacion{
+    width: 22%;
+}
+.ubicacion a{
+    text-decoration: none;
+    color: black;
+}
+.final{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: aliceblue;
+    height: 100px;
+}
+.final2{
+    padding-top: 30px;
+}
+
+@media (max-width:890px) {
+    .cabezera{
+        font-size: 15px;
+     } 
+}
+@media (max-width:823px){
+    .cabezera{
+        display: flex;
+        font-size: 15px;
+        flex-direction: column;
+     } 
+     .dere{
+        margin-top: 15px;
+     }
+     .imagenPrincipal #pp,#pd,#pa{
+        background-color: rgba(0, 0, 0, 0.623);
+     }
+     .encima{
+    font-size: 10%;
+    padding-top: 2%;
+     position: absolute;
+    top: 80%; /* mitad vertical */
+    left: 50%; /* mitad horizontal */
+    transform: translate(-50%, -50%); /* ajustar exactamente al centro */
+    width: 80%;
+    height: 160px;
+    background: black;
+    text-align: center;
+     }
+     @keyframes jugar {
+    0%{
+        font-size: 80%;
+        width: 70%;
+        height: 160px;
+    }
+    50%{
+        font-size: 100%;
+        width: 80%;
+        height: 200px;
+    }
+    100%{
+       font-size: 80%;
+        width: 70%;
+        height: 160px;
+    }
+}
+}
+@media (max-width:500px) {
+    .cabezera{
+        display: flex;
+        font-size: 15px;
+        width: 100%;
+        margin: 1%;
+        margin-left: 1%;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px gray;
+     } 
+     .imagenPrincipal #pp,#pd,#pa{
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.623);
+     }
+     .primeraSeccion{
+    height: 300px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(/Sin\ título.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 2%;
+}
+    .encima{
+    font-size: 12px;
+    padding-top: 2%;
+    position: absolute;
+    top: 80%; /* mitad vertical */
+    left: 50%; /* mitad horizontal */
+    transform: translate(-50%, -50%); /* ajustar exactamente al centro */
+    width: 80%;
+    height: 160px;
+    background: black;
+    text-align: center;
+     }
+     @keyframes jugar {
+    0%{
+        width: 90%;
+        height: 160px;
+    }
+    50%{
+        width: 90%;
+        height: 160px;
+    }
+    100%{
+        width: 90%;
+        height: 160px;
+    }
+}
+    .contenerLados{
+        display: block;
+    }
+.ladoDerecho img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 15px;
+    border-radius: 100%;
+    margin-left: 20%;
+    transition: whidth, heigth, color, 1s;
+}
+.ladoDerecho img:hover{
+    width: 110px;
+    height: 110px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10%;
+    margin-left: 20%;
+}
+.ladoIzquierdo{
+    margin-left: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.ladoIzquierdo p{
+    margin: 0 2%;
+}
+.ladoDerecho{
+    width: 90%;
+}
+.contenedorVacio{
+    height: 35px;
+}
+.primeraSeccion{
+    width: 100%;
+    margin-left: 1%;
+}
+.contenedorTotal{
+    display: block; 
+}
+.ladoImagen{
+    width: 99%;
+    height: 150px;
+    margin-left: 2%;
+}
+.ladoImagen img{
+    height: 150px;
+}
+.ladoTexto{
+    width: 95%;
+    margin-left: 2%;
+    height: 160px;
+    padding: 10px;
+}
+.menu{
+    text-align: center;
+}
+.encviarAmenu{
+    width: 20%;
+    margin-top: 0%;
+    font-size: 15px;
+    padding: 4px;
+}
+.contenedorDePlatillos{
+   flex-wrap: wrap;
+}
+.contenedorquinto{
+    width: 95%;
+    margin-left: 2%;
+    font-size: 13px;
+}
+.quintaSeccion{
+    margin-left: 3%;
+}
+.PieDpagina{
+    margin-left: 1%;
+    width: 100%;
+    font-size: 15px;
+}
+.iformacion{
+    width: 33%;
+}
+.contacto{width: 100%;}
+.ubicacion{width: 100%;}
+.iformacion{width: 100%;}
+.PieDpagina{
+    width: 100%;
+}
+.piepadre{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+     .final, .final2{
+        width: 100%;
+        background-color: black;
+     }
+     .final{
+        width: 100%;
+        margin-left: 1%;
+     }
+     .contacto{
+        margin: 30px 0px;
+     }
+
+}
+
+/* AQUI VA EL RESPONSIVE PARA DISPOSITIVOS MAS PEQUENOS */
+
+@media (max-width: 481px) {
+    .ladoTexto{
+    width: 95%;
+    margin-left: 2%;
+    height: 200px;
+    padding: 10px;
+}
+}
+
+
+@media (max-width:399px) {
+    .cabezera{
+        display: flex;
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 2%;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px gray;
+     } 
+     .imagenPrincipal #pp,#pd,#pa{
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.623);
+     }
+     .primeraSeccion{
+    height: 270px;
+    position: relative;
+    background-image: url(/Sin\ título.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 2%;
+}
+    .encima{
+    font-size: 12px;
+    padding-top: 2%;
+    position: absolute;
+    top: 80%; /* mitad vertical */
+    left: 50%; /* mitad horizontal */
+    transform: translate(-50%, -50%); /* ajustar exactamente al centro */
+    width: 80%;
+    height: 160px;
+    background: black;
+    text-align: center;
+     }
+    .contenerLados{
+        display: block;
+        width: 97%;
+    }
+.ladoDerecho img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 15px;
+    border-radius: 100%;
+    margin-left: 20%;
+    transition: whidth, heigth, color, 1s;
+}
+.ladoDerecho img:hover{
+    width: 110px;
+    height: 110px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 10%;
+    margin-left: 20%;
+}
+.ladoIzquierdo{
+    width: 100%;
+    text-align: center;
+}
+.contenedorVacio{
+    height: 35px;
+}
+.contenedorTotal{
+    display: block; 
+    width: 98%;
+}
+.ladoImagen{
+    width: 100%;
+    height: 150px;
+    margin-left: 1%;
+}
+.ladoImagen img{
+    height: 150px;
+}
+.ladoTexto{
+    width: 95%;
+    margin-left: 1%;
+    height: 200px;
+    padding: 10px;
+}
+.menu{
+    text-align: center;
+}
+.encviarAmenu{
+    text-align: center;
+    width: 40%;
+    margin-top: 0%;
+    font-size: 15px;
+    padding: 4px;
+}
+.cuartaSeccion{
+    margin-top: 60px;
+}
+.contenedorDePlatillos{
+   flex-wrap: wrap;
+}
+.contenedorquinto{
+    width: 95%;
+    margin-left: 2%;
+    font-size: 13px;
+}
+.quintaSeccion{
+    margin-left: 2%;
+}
+.PieDpagina{
+    margin-left: 1%;
+    width: 100%;
+    font-size: 15px;
+}
+.iformacion{
+    width: 33%;
+}
+.contacto{width: 100%;}
+.ubicacion{width: 100%;}
+.iformacion{width: 100%;}
+.PieDpagina{
+    width: 100%;
+}
+.piepadre{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+     .final, .final2{
+        width: 100%;
+        background-color: black;
+     }
+     .final{
+        width: 100%;
+        margin-left: 1%;
+     }
+     .contacto{
+        margin: 30px 0px;
+     }
+
+}
+
+@media (max-width:371px) {
+    .ladoTexto{
+    width: 95%;
+    margin-left: 1%;
+    height: 220px;
+    padding: 10px;
+}
+}
